@@ -1,6 +1,6 @@
-module github.com/boramalper/magnetico
+module github.com/ykzj/magnetico
 
-go 1.15
+go 1.21
 
 require (
 	github.com/Wessie/appdirs v0.0.0-20141031215813-6573e894f8e2
