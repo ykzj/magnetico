@@ -16,11 +16,11 @@ import (
 
 	"github.com/Wessie/appdirs"
 
-	"github.com/boramalper/magnetico/cmd/magneticod/bittorrent/metadata"
-	"github.com/boramalper/magnetico/cmd/magneticod/dht"
+	"github.com/ykzj/magnetico/cmd/magneticod/bittorrent/metadata"
+	"github.com/ykzj/magnetico/cmd/magneticod/dht"
 
-	"github.com/boramalper/magnetico/pkg/persistence"
-	"github.com/boramalper/magnetico/pkg/util"
+	"github.com/ykzj/magnetico/pkg/persistence"
+	"github.com/ykzj/magnetico/pkg/util"
 )
 
 type opFlags struct {

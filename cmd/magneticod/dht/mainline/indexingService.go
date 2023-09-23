@@ -84,7 +84,7 @@ func (is *IndexingService) Terminate() {
 }
 
 func (is *IndexingService) index() {
-	for range time.Tick(is.interval) {
+	for range time.Tick(is.interval * time.Millisecond) {
 		is.routingTableMutex.RLock()
 		routingTableLen := len(is.routingTable)
 		is.routingTableMutex.RUnlock()
@@ -107,6 +107,7 @@ func (is *IndexingService) bootstrap() {
 		"router.bittorrent.com:6881",
 		"dht.transmissionbt.com:6881",
 		"dht.libtorrent.org:25401",
+		"dht.aelitis.com:6881"
 	}
 
 	zap.L().Info("Bootstrapping as routing table is empty...")
