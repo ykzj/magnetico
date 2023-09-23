@@ -98,7 +98,7 @@ func main() {
 	}
 
 	trawlingManager := dht.NewManager(opFlags.IndexerAddrs, opFlags.IndexerInterval, opFlags.IndexerMaxNeighbors)
-	metadataSink := metadata.NewSink(5*time.Second, opFlags.LeechMaxN)
+	metadataSink := metadata.NewSink(1*time.Second, opFlags.LeechMaxN)
 
 	// The Event Loop
 	for stopped := false; !stopped; {
